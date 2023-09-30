@@ -1,0 +1,6 @@
+graft src
+include README.md
+include LICENSE.md
+include versioneer.py
+include src/gryffin/_version.py
+include requirements.txt

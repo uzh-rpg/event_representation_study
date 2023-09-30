@@ -1,0 +1,16 @@
+{
+	"general": {
+		"parallel": "True",
+		"boosted":  "False"
+	},
+	"parameters": [
+			{"name": "param_0", "type": "continuous", "low": 0.0, "high": 1.0, "size": 1},
+			{"name": "param_1", "type": "continuous", "low": 0.0, "high": 1.0, "size": 1},
+			{"name": "param_2", "type": "continuous", "low": 0.0, "high": 1.0, "size": 1},
+			{"name": "param_3", "type": "continuous", "low": 0.0, "high": 1.0, "size": 1},
+			{"name": "param_4", "type": "continuous", "low": 0.0, "high": 1.0, "size": 1}
+	],
+	"objectives": [
+			{"name": "obj_0", "goal": "minimize"}
+		]
+}

@@ -1,0 +1,18 @@
+name: evlicious
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.7
+  - ros-sensor-msgs
+  - ros-rosbag
+  - ros-cv-bridge
+  - hdf5plugin
+  - h5py
+  - numba
+  - matplotlib
+  - tqdm
+  - pandas
+  - open3d
+  - plotly

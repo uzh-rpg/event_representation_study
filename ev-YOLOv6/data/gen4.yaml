@@ -1,0 +1,10 @@
+train: "/shares/rpg.ifi.uzh/nzubic/datasets/gen4/OptimizedRepresentation/train"  # train
+val: "/shares/rpg.ifi.uzh/nzubic/datasets/gen4/OptimizedRepresentation/val"  # val
+test: "/shares/rpg.ifi.uzh/nzubic/datasets/gen4/OptimizedRepresentation/test"  # test (optional)
+anno_path: "/shares/rpg.ifi.uzh/nzubic/event_representation_study/GEN4_annotations/annotations/instances_valid.json"
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+# Classes
+nc: 3  # number of classes
+names: ["pedestrian", "two wheeler", "car"]  # class names

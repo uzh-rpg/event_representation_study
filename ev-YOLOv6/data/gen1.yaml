@@ -1,0 +1,11 @@
+train: "/shares/rpg.ifi.uzh/dgehrig/gen1/training.h5"  # train
+val: "/shares/rpg.ifi.uzh/dgehrig/gen1/validation.h5"  # val
+test: "/shares/rpg.ifi.uzh/dgehrig/gen1/testing.h5"  # test (optional)
+anno_path: "/shares/rpg.ifi.uzh/nzubic/event_representation_study/GEN1_annotations/annotations/instances_valid.json"
+
+# whether it is coco dataset, only coco dataset should be set to True
+is_coco: False
+
+# Classes
+nc: 2  # number of classes
+names: ["car", "pedestrian"]  # class names

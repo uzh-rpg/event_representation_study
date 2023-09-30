@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=96G
+#SBATCH --time=72:00:00
+#SBATCH --gres=gpu:1  # The GPU model is optional, you can simply specify 'gpu:1'
+#SBATCH --output=final_outputs/mininimagenet_tore.txt
+
+module load gpu cuda anaconda3
+srun mininimagenet_tore.bash

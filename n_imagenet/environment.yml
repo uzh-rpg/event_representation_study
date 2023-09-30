@@ -1,0 +1,23 @@
+name: e2t
+channels:
+        - pytorch
+        - defaults
+        - conda-forge
+dependencies:
+        - pip
+        - python=3.7
+        - pytorch
+        - torchvision
+        - cudatoolkit=10.1
+        - opencv
+        - tqdm
+        - scikit-video
+        - eigen
+        - boost
+        - boost-cpp
+        - pybind11
+        - nltk
+        - flake8
+        - tensorboard
+        - scikit-image
+        - matplotlib

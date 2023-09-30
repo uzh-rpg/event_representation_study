@@ -1,0 +1,6 @@
+.idea/
+*.pyc
+build/
+*.json
+*.png
+src/evlicious.egg-info
