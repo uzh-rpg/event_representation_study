@@ -49,7 +49,7 @@ pip install .
   <td align="center"><a href="https://download.ifi.uzh.ch/rpg/event_representation_study/gen1/testing.h5">download</a></td>
   </tbody></table>
 
-* 1 Mpx dataset needs to be downloaded from the following [repository](https://github.com/wds320/AAAI_Event_based_detection) and then processed using [precompute_reps.py](https://github.com/uzh-rpg/event_representation_study/blob/main/ev-YOLOv6/yolov6/data/gen4/precompute_reps.py) file.
+* 1 Mpx dataset needs to be downloaded from the following [repository](https://github.com/wds320/AAAI_Event_based_detection) and then processed using [precompute_reps.py](https://github.com/uzh-rpg/event_representation_study/blob/master/ev-YOLOv6/yolov6/data/gen4/precompute_reps.py) file.
 
 * Annotations for GEN1 and 1 Mpx datasets can be downloaded from [here](https://download.ifi.uzh.ch/rpg/event_representation_study/annotations.zip).
 
@@ -58,7 +58,7 @@ pip install .
 ### [1 Mpx](https://download.ifi.uzh.ch/rpg/event_representation_study/GEN4.zip)
 Contains folders of all trained models. Each folder has weights folder, and we use `best_ckpt.pt` as the checkpoint.<br>
 Currently, contains two optimized representations we found (small variations), by default the second one is used - aim for `gen1_optimized_2` and `gen1_optimized_augment_2` weights when evaluating.<br>
-If you want to use the first one, uncomment it at lines 16-66 ([optimized_representation.py](https://github.com/uzh-rpg/event_representation_study/blob/main/representations/optimized_representation.py)) and comment out the second one (lines 86-134).<br>
+If you want to use the first one, uncomment it at lines 16-66 ([optimized_representation.py](https://github.com/uzh-rpg/event_representation_study/blob/master/representations/optimized_representation.py)) and comment out the second one (lines 86-134).<br>
 `gen1_optimized_augment_2` should produce the following results (50.6% mAP):
 ```
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.506
@@ -138,7 +138,7 @@ python ev-YOLOv6/tools/train.py --wandb_name gen4_optimized_augment \
 ```
 
 ## Mini N-ImageNet experiments
-* All details regarding the execution of Mini N-ImageNet experiments can be seen in [n_imagenet/scripts](https://github.com/uzh-rpg/event_representation_study/tree/main/n_imagenet/scripts) folder.
+* All details regarding the execution of Mini N-ImageNet experiments can be seen in [n_imagenet/scripts](https://github.com/uzh-rpg/event_representation_study/tree/master/n_imagenet/scripts) folder.
 * Details on how to download the Mini N-ImageNet dataset and prepare data can be seen at their official repo [here](https://github.com/82magnolia/n_imagenet).
 
 ## Running GWD computation
@@ -158,7 +158,7 @@ Change file [Path](https://github.com/uzh-rpg/event_representation_study/blob/ma
 Change [`SAVE_PATH`](https://github.com/uzh-rpg/event_representation_study/blob/master/representations/representation_search/optimization.py#L272) of run_optimization function to the path where you want to save the results.
 <br><br>
 Obtained optimal representation (ERGO-12):<br>
-![ERGO-12](https://github.com/uzh-rpg/event_representation_study/blob/main/viz/ergo12_visualization.png)
+![ERGO-12](https://github.com/uzh-rpg/event_representation_study/blob/master/viz/ergo12_visualization.png)
 
 ## Code Acknowledgments
 This project has used code from the following projects:
