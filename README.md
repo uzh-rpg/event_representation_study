@@ -99,6 +99,9 @@ python ev-YOLOv6/tools/train.py --wandb_name test_gen1_optimized_augment --file 
 ```
 
 ## Training
+Pretrained Swin-V2 weights (`swinv2_yolov6l6.pt`) can be downloaded from [here](https://download.ifi.uzh.ch/rpg/event_representation_study/swinv2_yolov6l6.pt). <br>
+You can set the [pretrained variable](https://github.com/uzh-rpg/event_representation_study/blob/master/ev-YOLOv6/configs/swinv2_yolov6l6_finetune.py#L4) to your path to `swinv2_yolov6l6.pt` file.
+
 ### Gen1
 - Set `OUTPUT_DIR` to the directory where you want to store training outputs
 
