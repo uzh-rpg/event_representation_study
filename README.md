@@ -79,21 +79,21 @@ If you want to use the first one, uncomment it at lines 16-66 ([optimized_repres
 ## Evaluation
 - Set `DATASET_PATH` as the path to either the 1 Mpx or Gen1 dataset directory
 - Set `OUTPUT_DIR` to the path where you want to save evaluation outputs.
-- Set `conf-file`'s (e.g. ev-YOLOv6/configs/gen1_optimized.py) pre-trained parameter to the path of the model (best_ckpt.pt)
+- Set `conf-file`'s (e.g. ev-YOLOv6/configs/gen1_optimized_augment2.py by default; configs are same for both gen1 and gen4) pre-trained parameter to the path of the model (best_ckpt.pt)
 - Evaluation scripts also start from `train.py` file, but use `testing` parameter
 
 For simplicity, we are only showing the validation script for Gen1. For 1 Mpx it should be similar.
 ### Gen1 (no augment)
 ```Bash
 python ev-YOLOv6/tools/train.py --wandb_name test_gen1_optimized_augment --file $DATASET_PATH \
---data-path ev-YOLOv6/data/gen1_test.yaml --conf-file ev-YOLOv6/configs/gen1_optimized_augment2.py \
+--data-path ev-YOLOv6/data/gen1.yaml --conf-file ev-YOLOv6/configs/gen1_optimized_augment2.py \
 --img-size 640 --batch-size 32 --epochs 100 --device 0 --output-dir $OUTPUT_DIR \
 --name test_gen1_optimized_augment --representation OptimizedRepresentation --dataset gen1 --testing
 ```
 ### Gen1 (augment)
 ```Bash
 python ev-YOLOv6/tools/train.py --wandb_name test_gen1_optimized_augment --file $DATASET_PATH \
---data-path ev-YOLOv6/data/gen1_test.yaml --conf-file ev-YOLOv6/configs/gen1_optimized_augment2.py \
+--data-path ev-YOLOv6/data/gen1.yaml --conf-file ev-YOLOv6/configs/gen1_optimized_augment2.py \
 --img-size 640 --batch-size 32 --epochs 100 --device 0 --output-dir $OUTPUT_DIR \
 --name test_gen1_optimized_augment --representation OptimizedRepresentation --dataset gen1 --testing --augment
 ```
