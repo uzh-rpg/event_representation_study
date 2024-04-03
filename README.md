@@ -56,7 +56,7 @@ pip install .
 ## Pre-trained Checkpoints
 ### [Gen1](https://download.ifi.uzh.ch/rpg/event_representation_study/GEN1.zip)
 ### [1 Mpx](https://download.ifi.uzh.ch/rpg/event_representation_study/GEN4.zip)
-Contains folders of all trained models. Each folder has weights folder, and we use `best_ckpt.pt` as the checkpoint.<br>
+Contains folders of all trained models (in the end full YOLOv6 backbone that is now on-par with Swin-V2 but faster training and less memory). Each folder has weights folder, and we use `best_ckpt.pt` as the checkpoint.<br>
 Currently, contains two optimized representations we found (small variations), by default the second one is used - aim for `gen1_optimized_2` and `gen1_optimized_augment_2` weights when evaluating.<br>
 If you want to use the first one, uncomment it at lines 16-66 ([optimized_representation.py](https://github.com/uzh-rpg/event_representation_study/blob/master/representations/optimized_representation.py)) and comment out the second one (lines 86-134).<br>
 `gen1_optimized_augment_2` should produce the following results (50.6% mAP):
